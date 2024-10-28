@@ -1,0 +1,180 @@
+This is TEMPORARILY file. You can use it for DEBUG.
+* 5:43am Jan 5, 2024
+R12922167 vs a1234
+* order RB
+* board 5 6
+* time 60 0 0
+* ini E5 D4 D5 E3 C5 E4 A1 B2 B1 A3 C1 A2
+* 1. R 4 A3 A4
+* 2. B 6 E4 D3
+* 3. R 5 C1 D1
+* 4. B 4 E3 E2
+* 5. R 3 B1 B2
+* 6. B 6 D3 C3
+* 7. R 2 B2 C2
+* 8. B 4 E2 E1
+* Comment 0 0
+0. 1704404631418
+1. 1704404631418
+2. 1704404631465
+3. 1704404649836
+4. 1704404649884
+5. 1704404666759
+6. 1704404666811
+7. 1704404669459
+8. 1704404669514
+
+Points   Total
+   00      0000
+   01      0000
+   02      0001
+   03      0001
+   04      0003
+   05      0001
+# 8 10 12 14 #
+name
+MyAI
+version
+1.0.0
+time_setting 60 0 0
+1
+board_setting 5 6 2
+1
+get B 6 E5 D4 D5 E3 C5 E4 A1 B2 B1 A4 C1 A2
+E4 D3
+get B 4 E5 D4 D5 E3 C5 D3 A1 B2 B1 A4 D1 A2
+E3 E2
+get B 6 E5 D4 D5 E2 C5 D3 A1 0 B2 A4 D1 A2
+D3 C3
+get B 4 E5 D4 D5 E2 C5 C3 A1 0 C2 A4 D1 A2
+E2 E1
+# 8 10 12 14 #
+name
+MyAI
+version
+1.0.0
+time_setting 60 0 0
+1
+board_setting 5 6 2
+1
+get B 6 E5 D4 D5 E3 C5 E4 A1 B2 B1 A4 C1 A2
+
+The current board:
+
+<1>   A  C  E  0  0  
+<2>   F  B  0  0  0  
+<3>   0  0  0  0  4  
+<4>   D  0  0  2  6  
+<5>   0  0  5  3  1  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 6
+The number of red pieces: 6
+============================
+My result:
+Blue piece 6: (E4) -> (D3)
+
+<1>   A  C  E  0  0  
+<2>   F  B  0  0  0  
+<3>   0  0  0  6  4  
+<4>   D  0  0  2  0  
+<5>   0  0  5  3  1  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 6
+The number of red pieces: 6
+============================
+E4 D3
+get B 4 E5 D4 D5 E3 C5 D3 A1 B2 B1 A4 D1 A2
+
+The current board:
+
+<1>   A  C  0  E  0  
+<2>   F  B  0  0  0  
+<3>   0  0  0  6  4  
+<4>   D  0  0  2  0  
+<5>   0  0  5  3  1  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 6
+The number of red pieces: 6
+============================
+My result:
+Blue piece 4: (E3) -> (E2)
+
+<1>   A  C  0  E  0  
+<2>   F  B  0  0  4  
+<3>   0  0  0  6  0  
+<4>   D  0  0  2  0  
+<5>   0  0  5  3  1  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 6
+The number of red pieces: 6
+============================
+E3 E2
+get B 6 E5 D4 D5 E2 C5 D3 A1 0 B2 A4 D1 A2
+
+The current board:
+
+<1>   A  0  0  E  0  
+<2>   F  C  0  0  4  
+<3>   0  0  0  6  0  
+<4>   D  0  0  2  0  
+<5>   0  0  5  3  1  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 6
+The number of red pieces: 5
+============================
+My result:
+Blue piece 6: (D3) -> (C3)
+
+<1>   A  0  0  E  0  
+<2>   F  C  0  0  4  
+<3>   0  0  6  0  0  
+<4>   D  0  0  2  0  
+<5>   0  0  5  3  1  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 6
+The number of red pieces: 5
+============================
+D3 C3
+get B 4 E5 D4 D5 E2 C5 C3 A1 0 C2 A4 D1 A2
+
+The current board:
+
+<1>   A  0  0  E  0  
+<2>   F  0  C  0  4  
+<3>   0  0  6  0  0  
+<4>   D  0  0  2  0  
+<5>   0  0  5  3  1  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 6
+The number of red pieces: 5
+============================
+My result:
+Blue piece 4: (E2) -> (E1)
+
+<1>   A  0  0  E  4  
+<2>   F  0  C  0  0  
+<3>   0  0  6  0  0  
+<4>   D  0  0  2  0  
+<5>   0  0  5  3  1  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 6
+The number of red pieces: 5
+============================
+E2 E1
+###

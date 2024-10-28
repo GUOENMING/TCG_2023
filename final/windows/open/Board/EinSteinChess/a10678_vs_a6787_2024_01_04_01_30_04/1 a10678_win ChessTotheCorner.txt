@@ -1,0 +1,631 @@
+* 1:30am Jan 4, 2024
+* a10678 vs a6787
+* order RB
+* board 5 6
+* time 60 0 0
+* ini D4 D5 E4 E5 C5 E3 B2 B1 A2 A1 C1 A3
+* 1. R 5 C1 C2
+* 2. B 6 E3 D2
+* 3. R 1 B2 C3
+* 4. B 1 D4 C3
+* 5. R 6 A3 A4
+* 6. B 3 E4 D4
+* 7. R 6 A4 A5
+* 8. B 6 D2 C1
+* 9. R 3 A2 B2
+* 10. B 1 C3 B3
+* 11. R 5 C2 D3
+* 12. B 1 B3 A2
+* 13. R 1 B1 C2
+* 14. B 3 D4 C3
+* 15. R 6 A5 B5
+* 16. B 4 E5 D4
+* 17. R 4 A1 A2
+* 18. B 2 D5 C4
+* 19. R 1 C2 C3
+* 20. B 6 C1 B1
+* 21. R 3 B2 C3
+* 22. B 2 C4 C3
+* 23. R 3 A2 B2
+* 24. B 2 C3 B2
+* 25. R 3 D3 E4
+* 26. B 4 D4 C3
+* 27. R 1 E4 E5
+* ChessTotheCorner a10678 wins
+* Comment 0 0
+0. 1704331807777
+1. 1704331807777
+2. 1704331807886
+3. 1704331810620
+4. 1704331810730
+5. 1704331822555
+6. 1704331822665
+7. 1704331832694
+8. 1704331832803
+9. 1704331838693
+10. 1704331838771
+11. 1704331844238
+12. 1704331844332
+13. 1704331847238
+14. 1704331847316
+15. 1704331848488
+16. 1704331848550
+17. 1704331850815
+18. 1704331850925
+19. 1704331852440
+20. 1704331852549
+21. 1704331853143
+22. 1704331853236
+23. 1704331853455
+24. 1704331853565
+25. 1704331853674
+26. 1704331853768
+27. 1704331853877
+Points   Total
+  01      0007
+  02      0003
+  03      0006
+  04      0003
+  05      0002
+  06      0006
+
+# 8 10 12 14 16 18 20 22 24 26 28 30 32 34 #
+name
+MyAI_QQ
+version
+1.0.0
+time_setting 60 0 0
+1
+board_setting 5 6 2
+1
+get R 5 D4 D5 E4 E5 C5 E3 B2 B1 A2 A1 C1 A3
+C1 C2
+get R 1 D4 D5 E4 E5 C5 D2 B2 B1 A2 A1 C2 A3
+B2 C3
+get R 6 C3 D5 E4 E5 C5 D2 0 B1 A2 A1 C2 A3
+A3 A4
+get R 6 C3 D5 D4 E5 C5 D2 0 B1 A2 A1 C2 A4
+A4 A5
+get R 3 C3 D5 D4 E5 C5 C1 0 B1 A2 A1 C2 A5
+A2 B2
+get R 5 B3 D5 D4 E5 C5 C1 0 B1 B2 A1 C2 A5
+C2 D3
+get R 1 A2 D5 D4 E5 C5 C1 0 B1 B2 A1 D3 A5
+B1 C2
+get R 6 A2 D5 C3 E5 C5 C1 0 C2 B2 A1 D3 A5
+A5 B5
+get R 4 A2 D5 C3 D4 C5 C1 0 C2 B2 A1 D3 B5
+A1 A2
+get R 1 0 C4 C3 D4 C5 C1 0 C2 B2 A2 D3 B5
+C2 C3
+get R 3 0 C4 0 D4 C5 B1 0 C3 B2 A2 D3 B5
+B2 C3
+get R 3 0 C3 0 D4 C5 B1 0 0 0 A2 D3 B5
+A2 B2
+get R 3 0 B2 0 D4 C5 B1 0 0 0 0 D3 B5
+D3 E4
+get R 1 0 B2 0 C3 C5 B1 0 0 0 0 E4 B5
+E4 E5
+exit
+
+# 8 10 12 14 16 18 20 22 24 26 28 30 32 34 #
+name
+MyAI_QQ
+version
+1.0.0
+time_setting 60 0 0
+1
+board_setting 5 6 2
+1
+get R 5 D4 D5 E4 E5 C5 E3 B2 B1 A2 A1 C1 A3
+
+The current board:
+
+<1>   D  B  E  0  0  
+<2>   C  A  0  0  0  
+<3>   F  0  0  0  6  
+<4>   0  0  0  1  3  
+<5>   0  0  5  2  4  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 6
+The number of red pieces: 6
+scout move 11 2 8 score: -188 
+scout move 11 2 3 score: -187 
+research move 11 2 3 score: -185 
+scout move 11 2 7 score: -184 
+research move 11 2 7 score: -183 
+best_index: 2 
+remain: 56.993487 , use: 3.006513 sec
+next turn available time is 6.332610 + 12.000000
+============================
+My result:
+Red piece 5: (C1) -> (C2)
+
+<1>   D  B  0  0  0  
+<2>   C  A  E  0  0  
+<3>   F  0  0  0  6  
+<4>   0  0  0  1  3  
+<5>   0  0  5  2  4  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 6
+The number of red pieces: 6
+============================
+C1 C2
+get R 1 D4 D5 E4 E5 C5 D2 B2 B1 A2 A1 C2 A3
+
+The current board:
+
+<1>   D  B  0  0  0  
+<2>   C  A  E  6  0  
+<3>   F  0  0  0  0  
+<4>   0  0  0  1  3  
+<5>   0  0  5  2  4  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 6
+The number of red pieces: 6
+scout move 7 6 12 score: -244 
+scout move 7 6 7 score: -265 
+scout move 7 6 11 score: -245 
+best_index: 0 
+remain: 54.366368 , use: 2.627119 sec
+next turn available time is 6.795796 + 12.000000
+============================
+My result:
+Red piece 1: (B2) -> (C3)
+
+<1>   D  B  0  0  0  
+<2>   C  0  E  6  0  
+<3>   F  0  A  0  0  
+<4>   0  0  0  1  3  
+<5>   0  0  5  2  4  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 6
+The number of red pieces: 6
+============================
+B2 C3
+get R 6 C3 D5 E4 E5 C5 D2 0 B1 A2 A1 C2 A3
+
+The current board:
+
+<1>   D  B  0  0  0  
+<2>   C  0  E  6  0  
+<3>   F  0  1  0  0  
+<4>   0  0  0  0  3  
+<5>   0  0  5  2  4  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 6
+The number of red pieces: 5
+scout move 12 10 16 score: 263 
+scout move 12 10 11 score: 265 
+research move 12 10 11 score: 265 
+scout move 12 10 15 score: 267 
+research move 12 10 15 score: 267 
+best_index: 2 
+remain: 42.664333 , use: 11.702035 sec
+next turn available time is 6.094905 + 12.000000
+============================
+My result:
+Red piece 6: (A3) -> (A4)
+
+<1>   D  B  0  0  0  
+<2>   C  0  E  6  0  
+<3>   0  0  1  0  0  
+<4>   F  0  0  0  3  
+<5>   0  0  5  2  4  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 6
+The number of red pieces: 5
+============================
+A3 A4
+get R 6 C3 D5 D4 E5 C5 D2 0 B1 A2 A1 C2 A4
+
+The current board:
+
+<1>   D  B  0  0  0  
+<2>   C  0  E  6  0  
+<3>   0  0  1  0  0  
+<4>   F  0  0  3  0  
+<5>   0  0  5  2  4  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 6
+The number of red pieces: 5
+scout move 12 15 21 score: -386 
+scout move 12 15 16 score: -387 
+scout move 12 15 20 score: -383 
+research move 12 15 20 score: -383 
+best_index: 2 
+remain: 32.747824 , use: 9.916509 sec
+next turn available time is 5.457971 + 12.000000
+============================
+My result:
+Red piece 6: (A4) -> (A5)
+
+<1>   D  B  0  0  0  
+<2>   C  0  E  6  0  
+<3>   0  0  1  0  0  
+<4>   0  0  0  3  0  
+<5>   F  0  5  2  4  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 6
+The number of red pieces: 5
+============================
+A4 A5
+get R 3 C3 D5 D4 E5 C5 C1 0 B1 A2 A1 C2 A5
+
+The current board:
+
+<1>   D  B  6  0  0  
+<2>   C  0  E  0  0  
+<3>   0  0  1  0  0  
+<4>   0  0  0  3  0  
+<5>   F  0  5  2  4  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 6
+The number of red pieces: 5
+scout move 9 5 11 score: -1190 
+scout move 9 5 6 score: -1107 
+research move 9 5 6 score: -784 
+scout move 9 5 10 score: -927 
+best_index: 1 
+remain: 26.949256 , use: 5.798568 sec
+next turn available time is 5.389851 + 12.000000
+============================
+My result:
+Red piece 3: (A2) -> (B2)
+
+<1>   D  B  6  0  0  
+<2>   0  C  E  0  0  
+<3>   0  0  1  0  0  
+<4>   0  0  0  3  0  
+<5>   F  0  5  2  4  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 6
+The number of red pieces: 5
+============================
+A2 B2
+get R 5 B3 D5 D4 E5 C5 C1 0 B1 B2 A1 C2 A5
+
+The current board:
+
+<1>   D  B  6  0  0  
+<2>   0  C  E  0  0  
+<3>   0  1  0  0  0  
+<4>   0  0  0  3  0  
+<5>   F  0  5  2  4  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 6
+The number of red pieces: 5
+scout move 11 7 13 score: -838 
+scout move 11 7 8 score: -842 
+scout move 11 7 12 score: -839 
+best_index: 0 
+remain: 21.631835 , use: 5.317421 sec
+next turn available time is 5.407959 + 12.000000
+============================
+My result:
+Red piece 5: (C2) -> (D3)
+
+<1>   D  B  6  0  0  
+<2>   0  C  0  0  0  
+<3>   0  1  0  E  0  
+<4>   0  0  0  3  0  
+<5>   F  0  5  2  4  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 6
+The number of red pieces: 5
+============================
+C2 D3
+get R 1 A2 D5 D4 E5 C5 C1 0 B1 B2 A1 D3 A5
+
+The current board:
+
+<1>   D  B  6  0  0  
+<2>   1  C  0  0  0  
+<3>   0  0  0  E  0  
+<4>   0  0  0  3  0  
+<5>   F  0  5  2  4  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 6
+The number of red pieces: 5
+scout move 8 1 7 score: -2477 
+scout move 8 1 2 score: -2504 
+scout move 8 1 6 score: -2477 
+best_index: 0 
+remain: 18.832140 , use: 2.799695 sec
+next turn available time is 6.277380 + 9.554760
+============================
+My result:
+Red piece 2: (B1) -> (C2)
+
+<1>   D  0  6  0  0  
+<2>   1  C  B  0  0  
+<3>   0  0  0  E  0  
+<4>   0  0  0  3  0  
+<5>   F  0  5  2  4  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 6
+The number of red pieces: 5
+============================
+B1 C2
+get R 6 A2 D5 C3 E5 C5 C1 0 C2 B2 A1 D3 A5
+
+The current board:
+
+<1>   D  0  6  0  0  
+<2>   1  C  B  0  0  
+<3>   0  0  3  E  0  
+<4>   0  0  0  0  0  
+<5>   F  0  5  2  4  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 6
+The number of red pieces: 5
+scout move 12 20 21 score: -2654 
+best_index: 0 
+remain: 17.748055 , use: 1.084085 sec
+next turn available time is 8.874028 + 5.874028
+============================
+My result:
+Red piece 6: (A5) -> (B5)
+
+<1>   D  0  6  0  0  
+<2>   1  C  B  0  0  
+<3>   0  0  3  E  0  
+<4>   0  0  0  0  0  
+<5>   0  F  5  2  4  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 6
+The number of red pieces: 5
+============================
+A5 B5
+get R 4 A2 D5 C3 D4 C5 C1 0 C2 B2 A1 D3 B5
+
+The current board:
+
+<1>   D  0  6  0  0  
+<2>   1  C  B  0  0  
+<3>   0  0  3  E  0  
+<4>   0  0  0  4  0  
+<5>   0  F  5  2  0  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 6
+The number of red pieces: 5
+scout move 10 0 6 score: -1996 
+scout move 10 0 1 score: -1995 
+research move 10 0 1 score: -1994 
+scout move 10 0 5 score: -1899 
+research move 10 0 5 score: -885 
+best_index: 2 
+remain: 15.573981 , use: 2.174074 sec
+next turn available time is 15.573981 + 0.000000
+============================
+My result:
+Red piece 4: (A1) -> (A2)
+
+<1>   0  0  6  0  0  
+<2>   D  C  B  0  0  
+<3>   0  0  3  E  0  
+<4>   0  0  0  4  0  
+<5>   0  F  5  2  0  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 5
+The number of red pieces: 5
+============================
+A1 A2
+get R 1 0 C4 C3 D4 C5 C1 0 C2 B2 A2 D3 B5
+
+The current board:
+
+<1>   0  0  6  0  0  
+<2>   D  C  B  0  0  
+<3>   0  0  3  E  0  
+<4>   0  0  2  4  0  
+<5>   0  F  5  0  0  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 5
+The number of red pieces: 5
+scout move 8 7 13 score: 709 
+scout move 8 7 8 score: 711 
+research move 8 7 8 score: 711 
+scout move 8 7 12 score: 713 
+research move 8 7 12 score: 713 
+best_index: 2 
+remain: 14.134512 , use: 1.439469 sec
+next turn available time is 4.711504 + 0.000000
+============================
+My result:
+Red piece 2: (C2) -> (C3)
+
+<1>   0  0  6  0  0  
+<2>   D  C  0  0  0  
+<3>   0  0  B  E  0  
+<4>   0  0  2  4  0  
+<5>   0  F  5  0  0  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 4
+The number of red pieces: 5
+============================
+C2 C3
+get R 3 0 C4 0 D4 C5 B1 0 C3 B2 A2 D3 B5
+
+The current board:
+
+<1>   0  6  0  0  0  
+<2>   D  C  0  0  0  
+<3>   0  0  B  E  0  
+<4>   0  0  2  4  0  
+<5>   0  F  5  0  0  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 4
+The number of red pieces: 5
+scout move 9 6 12 score: -2487 
+scout move 9 6 7 score: -2597 
+scout move 9 6 11 score: -2489 
+best_index: 0 
+remain: 13.640975 , use: 0.493537 sec
+next turn available time is 4.546992 + 0.000000
+============================
+My result:
+Red piece 3: (B2) -> (C3)
+
+<1>   0  6  0  0  0  
+<2>   D  0  0  0  0  
+<3>   0  0  C  E  0  
+<4>   0  0  2  4  0  
+<5>   0  F  5  0  0  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 4
+The number of red pieces: 4
+============================
+B2 C3
+get R 3 0 C3 0 D4 C5 B1 0 0 0 A2 D3 B5
+
+The current board:
+
+<1>   0  6  0  0  0  
+<2>   D  0  0  0  0  
+<3>   0  0  2  E  0  
+<4>   0  0  0  4  0  
+<5>   0  F  5  0  0  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 4
+The number of red pieces: 3
+scout move 10 5 11 score: -3467 
+scout move 10 5 6 score: -3266 
+research move 10 5 6 score: -2577 
+scout move 10 5 10 score: -2838 
+best_index: 1 
+remain: 13.538748 , use: 0.102227 sec
+next turn available time is 4.512916 + 0.000000
+============================
+My result:
+Red piece 4: (A2) -> (B2)
+
+<1>   0  6  0  0  0  
+<2>   0  D  0  0  0  
+<3>   0  0  2  E  0  
+<4>   0  0  0  4  0  
+<5>   0  F  5  0  0  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 4
+The number of red pieces: 3
+============================
+A2 B2
+get R 3 0 B2 0 D4 C5 B1 0 0 0 0 D3 B5
+
+The current board:
+
+<1>   0  6  0  0  0  
+<2>   0  2  0  0  0  
+<3>   0  0  0  E  0  
+<4>   0  0  0  4  0  
+<5>   0  F  5  0  0  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 4
+The number of red pieces: 2
+scout move 11 13 19 score: -2101 
+scout move 11 13 14 score: -2246 
+scout move 11 13 18 score: -2179 
+best_index: 0 
+remain: 13.536738 , use: 0.002010 sec
+next turn available time is 4.512246 + 0.000000
+============================
+My result:
+Red piece 5: (D3) -> (E4)
+
+<1>   0  6  0  0  0  
+<2>   0  2  0  0  0  
+<3>   0  0  0  0  0  
+<4>   0  0  0  4  E  
+<5>   0  F  5  0  0  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 4
+The number of red pieces: 2
+============================
+D3 E4
+get R 1 0 B2 0 C3 C5 B1 0 0 0 0 E4 B5
+
+The current board:
+
+<1>   0  6  0  0  0  
+<2>   0  2  0  0  0  
+<3>   0  0  4  0  0  
+<4>   0  0  0  0  E  
+<5>   0  F  5  0  0  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 4
+The number of red pieces: 2
+best_index: 0 
+remain: 13.536718 , use: 0.000020 sec
+next turn available time is 4.512239 + 0.000000
+============================
+My result:
+Red piece 5: (E4) -> (E5)
+
+<1>   0  6  0  0  0  
+<2>   0  2  0  0  0  
+<3>   0  0  4  0  0  
+<4>   0  0  0  0  0  
+<5>   0  F  5  0  E  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 4
+The number of red pieces: 2
+============================
+E4 E5
+
+###

@@ -1,0 +1,401 @@
+* 5:46pm Jan 3, 2024
+* a10678 vs a6787
+* order RB
+* board 5 6
+* time 60 0 0
+* ini E5 E4 D4 C5 E3 D5 A1 A2 B2 C1 A3 B1
+* 1. R 6 B1 B2
+* 2. B 3 D4 C3
+* 3. R 2 A2 B2
+* 4. B 4 C5 B4
+* 5. R 2 B2 C2
+* 6. B 6 D5 C5
+* 7. R 6 A3 B4
+* 8. B 4 C3 B3
+* 9. R 5 B4 B5
+* 10. B 2 E4 E3
+* 11. R 1 A1 B1
+* 12. B 6 C5 B4
+* 13. R 1 B1 C1
+* 14. B 2 E3 D2
+* 15. R 4 B5 C5
+* 16. B 6 B4 A3
+* 17. R 1 C1 C2
+* 18. B 5 B3 A3
+* 19. R 5 C5 D5
+* 20. B 5 A3 A2
+* 21. R 3 D5 E5
+* ChessTotheCorner a10678 wins
+* Comment 0 0
+0. 1704304006411
+1. 1704304006411
+2. 1704304006504
+3. 1704304008207
+4. 1704304008285
+5. 1704304013597
+6. 1704304013706
+7. 1704304018798
+8. 1704304018908
+9. 1704304021282
+10. 1704304021392
+11. 1704304022485
+12. 1704304022579
+13. 1704304023297
+14. 1704304023391
+15. 1704304023782
+16. 1704304023891
+17. 1704304024094
+18. 1704304024203
+19. 1704304024313
+20. 1704304024407
+21. 1704304024532
+Points   Total
+  01      0003
+  02      0004
+  03      0002
+  04      0003
+  05      0004
+  06      0005
+
+# 8 10 12 14 16 18 20 22 24 26 #
+name
+MyAI
+version
+1.0.0
+time_setting 60 0 0
+1
+board_setting 5 6 2
+1
+get B 3 E5 E4 D4 C5 E3 D5 A1 A2 0 C1 A3 B2
+D4 C3
+get B 4 E5 E4 C3 C5 E3 D5 A1 B2 0 C1 A3 0
+C5 B4
+get B 6 E5 E4 C3 B4 E3 D5 A1 C2 0 C1 A3 0
+D5 C5
+get B 4 E5 E4 C3 0 E3 C5 A1 C2 0 C1 B4 0
+C3 B3
+get B 2 E5 E4 B3 0 E3 C5 A1 C2 0 C1 B5 0
+E4 E3
+get B 6 E5 E3 B3 0 0 C5 B1 C2 0 C1 B5 0
+C5 B4
+get B 2 E5 E3 B3 0 0 B4 C1 C2 0 0 B5 0
+E3 D2
+get B 6 E5 D2 B3 0 0 B4 C1 C2 0 0 C5 0
+B4 A3
+get B 5 E5 D2 B3 0 0 A3 C2 0 0 0 C5 0
+B3 A3
+get B 5 E5 D2 A3 0 0 0 C2 0 0 0 D5 0
+A3 A2
+exit
+
+# 8 10 12 14 16 18 20 22 24 26 #
+name
+MyAI
+version
+1.0.0
+time_setting 60 0 0
+1
+board_setting 5 6 2
+1
+get B 3 E5 E4 D4 C5 E3 D5 A1 A2 0 C1 A3 B2
+
+The current board:
+
+<1>   A  0  D  0  0  
+<2>   B  F  0  0  0  
+<3>   E  0  0  0  5  
+<4>   0  0  0  3  2  
+<5>   0  0  4  6  1  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 6
+The number of red pieces: 5
+============================
+My result:
+Blue piece 3: (D4) -> (C3)
+
+<1>   A  0  D  0  0  
+<2>   B  F  0  0  0  
+<3>   E  0  3  0  5  
+<4>   0  0  0  0  2  
+<5>   0  0  4  6  1  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 6
+The number of red pieces: 5
+============================
+D4 C3
+get B 4 E5 E4 C3 C5 E3 D5 A1 B2 0 C1 A3 0
+
+The current board:
+
+<1>   A  0  D  0  0  
+<2>   0  B  0  0  0  
+<3>   E  0  3  0  5  
+<4>   0  0  0  0  2  
+<5>   0  0  4  6  1  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 6
+The number of red pieces: 4
+============================
+My result:
+Blue piece 4: (C5) -> (B4)
+
+<1>   A  0  D  0  0  
+<2>   0  B  0  0  0  
+<3>   E  0  3  0  5  
+<4>   0  4  0  0  2  
+<5>   0  0  0  6  1  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 6
+The number of red pieces: 4
+============================
+C5 B4
+get B 6 E5 E4 C3 B4 E3 D5 A1 C2 0 C1 A3 0
+
+The current board:
+
+<1>   A  0  D  0  0  
+<2>   0  0  B  0  0  
+<3>   E  0  3  0  5  
+<4>   0  4  0  0  2  
+<5>   0  0  0  6  1  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 6
+The number of red pieces: 4
+============================
+My result:
+Blue piece 6: (D5) -> (C5)
+
+<1>   A  0  D  0  0  
+<2>   0  0  B  0  0  
+<3>   E  0  3  0  5  
+<4>   0  4  0  0  2  
+<5>   0  0  6  0  1  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 6
+The number of red pieces: 4
+============================
+D5 C5
+get B 4 E5 E4 C3 0 E3 C5 A1 C2 0 C1 B4 0
+
+The current board:
+
+<1>   A  0  D  0  0  
+<2>   0  0  B  0  0  
+<3>   0  0  3  0  5  
+<4>   0  E  0  0  2  
+<5>   0  0  6  0  1  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 5
+The number of red pieces: 4
+============================
+My result:
+Blue piece 3: (C3) -> (B3)
+
+<1>   A  0  D  0  0  
+<2>   0  0  B  0  0  
+<3>   0  3  0  0  5  
+<4>   0  E  0  0  2  
+<5>   0  0  6  0  1  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 5
+The number of red pieces: 4
+============================
+C3 B3
+get B 2 E5 E4 B3 0 E3 C5 A1 C2 0 C1 B5 0
+
+The current board:
+
+<1>   A  0  D  0  0  
+<2>   0  0  B  0  0  
+<3>   0  3  0  0  5  
+<4>   0  0  0  0  2  
+<5>   0  E  6  0  1  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 5
+The number of red pieces: 4
+============================
+My result:
+Blue piece 2: (E4) -> (E3)
+
+<1>   A  0  D  0  0  
+<2>   0  0  B  0  0  
+<3>   0  3  0  0  2  
+<4>   0  0  0  0  0  
+<5>   0  E  6  0  1  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 4
+The number of red pieces: 4
+============================
+E4 E3
+get B 6 E5 E3 B3 0 0 C5 B1 C2 0 C1 B5 0
+
+The current board:
+
+<1>   0  A  D  0  0  
+<2>   0  0  B  0  0  
+<3>   0  3  0  0  2  
+<4>   0  0  0  0  0  
+<5>   0  E  6  0  1  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 4
+The number of red pieces: 4
+============================
+My result:
+Blue piece 6: (C5) -> (B4)
+
+<1>   0  A  D  0  0  
+<2>   0  0  B  0  0  
+<3>   0  3  0  0  2  
+<4>   0  6  0  0  0  
+<5>   0  E  0  0  1  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 4
+The number of red pieces: 4
+============================
+C5 B4
+get B 2 E5 E3 B3 0 0 B4 C1 C2 0 0 B5 0
+
+The current board:
+
+<1>   0  0  A  0  0  
+<2>   0  0  B  0  0  
+<3>   0  3  0  0  2  
+<4>   0  6  0  0  0  
+<5>   0  E  0  0  1  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 4
+The number of red pieces: 3
+============================
+My result:
+Blue piece 2: (E3) -> (D2)
+
+<1>   0  0  A  0  0  
+<2>   0  0  B  2  0  
+<3>   0  3  0  0  0  
+<4>   0  6  0  0  0  
+<5>   0  E  0  0  1  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 4
+The number of red pieces: 3
+============================
+E3 D2
+get B 6 E5 D2 B3 0 0 B4 C1 C2 0 0 C5 0
+
+The current board:
+
+<1>   0  0  A  0  0  
+<2>   0  0  B  2  0  
+<3>   0  3  0  0  0  
+<4>   0  6  0  0  0  
+<5>   0  0  E  0  1  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 4
+The number of red pieces: 3
+============================
+My result:
+Blue piece 6: (B4) -> (A3)
+
+<1>   0  0  A  0  0  
+<2>   0  0  B  2  0  
+<3>   6  3  0  0  0  
+<4>   0  0  0  0  0  
+<5>   0  0  E  0  1  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 4
+The number of red pieces: 3
+============================
+B4 A3
+get B 5 E5 D2 B3 0 0 A3 C2 0 0 0 C5 0
+
+The current board:
+
+<1>   0  0  0  0  0  
+<2>   0  0  A  2  0  
+<3>   6  3  0  0  0  
+<4>   0  0  0  0  0  
+<5>   0  0  E  0  1  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 4
+The number of red pieces: 2
+============================
+My result:
+Blue piece 3: (B3) -> (A3)
+
+<1>   0  0  0  0  0  
+<2>   0  0  A  2  0  
+<3>   3  0  0  0  0  
+<4>   0  0  0  0  0  
+<5>   0  0  E  0  1  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 3
+The number of red pieces: 2
+============================
+B3 A3
+get B 5 E5 D2 A3 0 0 0 C2 0 0 0 D5 0
+
+The current board:
+
+<1>   0  0  0  0  0  
+<2>   0  0  A  2  0  
+<3>   3  0  0  0  0  
+<4>   0  0  0  0  0  
+<5>   0  0  0  E  1  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 3
+The number of red pieces: 2
+============================
+My result:
+Blue piece 3: (A3) -> (A2)
+
+<1>   0  0  0  0  0  
+<2>   3  0  A  2  0  
+<3>   0  0  0  0  0  
+<4>   0  0  0  0  0  
+<5>   0  0  0  E  1  
+
+     <A><B><C><D><E>
+
+The number of blue pieces: 3
+The number of red pieces: 2
+============================
+A3 A2
+
+###
